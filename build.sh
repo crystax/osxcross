@@ -91,7 +91,7 @@ build_xar
 ## Apple TAPI Library ##
 
 if [ $NEED_TAPI_SUPPORT -eq 1 ]; then
-  get_sources https://github.com/tpoechtrager/apple-libtapi.git 1000.10.8
+  get_sources https://github.com/crystax/apple-libtapi.git 1000.10.8
 
   if [ $f_res -eq 1 ]; then
     pushd $CURRENT_BUILD_PROJECT_NAME &>/dev/null
@@ -108,7 +108,7 @@ CCTOOLS_VERSION=927.0.2
 LINKER_VERSION=450.3
 
 get_sources \
-  https://github.com/tpoechtrager/cctools-port.git \
+  https://github.com/crystax/cctools-port.git \
   $CCTOOLS_VERSION-ld64-$LINKER_VERSION
 
 if [ $f_res -eq 1 ]; then
